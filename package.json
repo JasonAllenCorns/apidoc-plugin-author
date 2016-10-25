@@ -1,0 +1,24 @@
+{
+  "name": "apidoc-plugin-author",
+  "version": "1.0.0",
+  "description": "Generates an apidoc plugin for listing endpoint Author",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonAllenCorns/apidoc-plugin-downstream.git"
+  },
+  "keywords": [
+    "apidoc",
+    "plugin",
+    "documentation"
+  ],
+  "author": "Jason Corns <apidoc.plugin.downstream@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonAllenCorns/apidoc-plugin-downstream/issues"
+  },
+  "homepage": "https://github.com/JasonAllenCorns/apidoc-plugin-downstream#readme"
+}
