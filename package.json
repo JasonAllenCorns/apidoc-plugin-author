@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/JasonAllenCorns/apidoc-plugin-downstream/issues"
   },
-  "homepage": "https://github.com/JasonAllenCorns/apidoc-plugin-downstream#readme"
+  "homepage": "https://github.com/JasonAllenCorns/apidoc-plugin-downstream#readme",
+  "dependencies": {
+    "apidoc-core": "^0.7.1"
+  }
 }
