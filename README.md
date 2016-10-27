@@ -33,3 +33,8 @@ With this modification, and after updating the root project's dependency on apiD
 ``` html
 <h4 class="muted">Authored by: Jason Corns &lt;JasonAllenCorns@users.noreply.github.com&gt;</h4>
 ```
+
+## Notes and known limitations
+
+ - The `author` field, like all `api___` fields, are passed the lines containing the `@apiAuthor` mark and all lines thereafter up to either another `api_____` mark or the end of the content block.  The content includes the newline mark(s) as a consolidated string.  Issue #4 will cover this case.
+ - The `author` field is, for now, a singular field.  Multiple `author` listings will show only a single value, as a "last-in-wins" value.
