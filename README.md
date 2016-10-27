@@ -7,12 +7,15 @@ As an extension of [apiDoc](https://github.com/apidoc/apidoc), first install at 
 This plugin, as with all apiDoc plugins named as `apidoc-plugin-*`, can be installed locally or globally alongside the `apidoc-core`. Run either `npm install apidoc-plugin-author` or `npm install -g apidoc-plugin-author`.
 
 ## Getting started
-As the author of API endpoints, looking for a way to start documentation and actually maintain it, [apiDoc](https://github.com/apidoc/apidoc) is a great way to go.  Those who are new to the syntax of apiDoc should thoroughly read the associated [documentation](http://apidocjs.com/).  Once familiar with the general syntax, add something similar to the following, to include the `author` field then the generated documentation. ```js
+As the author of API endpoints, looking for a way to start documentation and actually maintain it, [apiDoc](https://github.com/apidoc/apidoc) is a great way to go.  Those who are new to the syntax of apiDoc should thoroughly read the associated [documentation](http://apidocjs.com/).  Once familiar with the general syntax, add something similar to the following, to include the `author` field then the generated documentation.
+```js
 /**
 * @apiAuthor Jason Corns <JasonAllenCorns@users.noreply.github.com>
-**/ ```
+**/
+```
 
-The generated `api_data.json` should now include a block like ``` json
+The generated `api_data.json` should now include a block like
+``` json
 {
     "author": "Jason Corns <JasonAllenCorns@users.noreply.github.com>"
 }
@@ -21,7 +24,8 @@ The generated `api_data.json` should now include a block like ``` json
 ### Wait, that didn't show up!
 [apiDoc](https://github.com/apidoc/apidoc) has a dependency on [apiDoc-core](https://github.com/apidoc/apidoc-core) to generate documentation sites.  `apiDoc` is the visual wrapper and includes the template for the generated doc site.  In order to add the `author` field - or any other custom plugin field - the template must be updated to include references to the new field.
 
-For example, fork the [apiDoc](https://github.com/apidoc/apidoc) and modify the [`template-article`](https://github.com/apidoc/apidoc/blob/7382ed049b805201e8253cbb03810065f301dbd8/template/index.html#L99-L104) block to add something like the following: ``` handlebars
+For example, fork the [apiDoc](https://github.com/apidoc/apidoc) and modify the [`template-article`](https://github.com/apidoc/apidoc/blob/7382ed049b805201e8253cbb03810065f301dbd8/template/index.html#L99-L104) block to add something like the following:
+``` handlebars
 {{#if article.author}}<h4 class="muted">Authored by: {{article.author}}</h4>{{/if}}
 ```
 
