@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JasonAllenCorns/apidoc-plugin-downstream.git"
+    "url": "git+https://github.com/JasonAllenCorns/apidoc-plugin-author.git"
   },
   "keywords": [
     "apidoc",
@@ -18,9 +18,9 @@
   "author": "Jason Corns <apidoc.plugin.downstream@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JasonAllenCorns/apidoc-plugin-downstream/issues"
+    "url": "https://github.com/JasonAllenCorns/apidoc-plugin-author/issues"
   },
-  "homepage": "https://github.com/JasonAllenCorns/apidoc-plugin-downstream#readme",
+  "homepage": "https://github.com/JasonAllenCorns/apidoc-plugin-author#readme",
   "dependencies": {
     "apidoc-core": "^0.7.1"
   }
